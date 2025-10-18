@@ -130,6 +130,7 @@ document.querySelectorAll('.committee-card, .timeline-item, .sponsor-card').forE
     scrollObserver.observe(el);
 });
 
+
 function updateCountdown() {
     const conferenceDate = new Date('2025-03-15');
     const now = new Date();
