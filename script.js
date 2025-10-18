@@ -86,3 +86,63 @@ window.addEventListener('scroll', function() {
         navbar.style.backdropFilter = 'none';
     }
 });
+
+
+window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+});
+
+function showNotification(message, type = 'success') {
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
+document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        showNotification('İşleminiz başarıyla alındı!', 'success');
+        this.reset();
+    });
+});
+
+
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+document.querySelectorAll('.committee-card, .timeline-item, .sponsor-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    scrollObserver.observe(el);
+});
+
+function updateCountdown() {
+    const conferenceDate = new Date('2025-03-15');
+    const now = new Date();
+    const diff = conferenceDate - now;
+    
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    
+    const countdownElement = document.getElementById('countdown');
+    if (countdownElement) {
+        countdownElement.innerHTML = `${days}gün ${hours}saat`;
+    }
+}
+
+updateCountdown();
+setInterval(updateCountdown, 3600000);
