@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başvurular Henüz Açılmamıştır - Akdumun25</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">Akdumun<span>25</span></a></h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">Hakkımızda</a></li>
+                    <li class="nav-item"><a href="index.html#committees" class="nav-link">Komiteler</a></li>
+                    <li class="nav-item"><a href="index.html#registration" class="nav-link">Kayıt</a></li>
+                    <li class="nav-item"><a href="index.html#schedule" class="nav-link">Program</a></li>
+                    <li class="nav-item"><a href="index.html#sponsors" class="nav-link">Sponsorlar</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">İletişim</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="not-open-hero">
+        <div class="container">
+            <div class="not-open-content">
+                <div class="not-open-icon">⏳</div>
+                <h1>Başvurular Henüz Açılmamıştır</h1>
+                <p class="not-open-subtitle">Akdumun25 başvuruları yakında açılacaktır. Lütfen daha sonra tekrar kontrol edin.</p>
+                
+                <div class="countdown-container">
+                    <h3>Başvuruların Açılmasına Kalan Süre</h3>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Gün</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Saat</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Dakika</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Saniye</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="not-open-actions">
+                    <a href="index.html" class="btn btn-light">Ana Sayfaya Dön</a>
+                    <a href="index.html#committees" class="btn btn-light">Komiteleri İncele</a>
+                </div>
+                
+                <div class="not-open-info">
+                    <h3>Başvuru Süreci Hakkında</h3>
+                    <ul>
+                        <li>Başvurular açıldığında bu sayfadan ve sosyal medya hesaplarımızdan duyurulacaktır</li>
+                        <li>Başvuru yapmadan önce komiteleri ve konuları incelemenizi öneririz</li>
+                        <li>Başvuru süreci ile ilgili tüm detaylar açıklandığında bu sayfada paylaşılacaktır</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-preview">
+        <div class="container">
+            <h2 class="section-title">Sorularınız mı var?</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>E-posta:</strong> info@akdumun25.org
+                </div>
+                <div class="contact-item">
+                    <strong>Telefon:</strong> +90 9999999999
+                </div>
+                <div class="contact-item">
+                    <strong>Instagram:</strong> <a href="https://www.instagram.com/akdumun24/" class="social-link">@akdumun24</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Akdumun25 - Tüm Hakları Saklıdır</p>
+        </div>
+    </footer>
+
+    <style>
+        .not-open-hero {
+            padding: 150px 0 100px;
+            background: linear-gradient(135deg, var(--light-green) 0%, var(--primary-green) 100%);
+            color: var(--white);
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .not-open-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .not-open-icon {
+            font-size: 8rem;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+        }
+        
+        .not-open-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .not-open-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 50px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .countdown-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .countdown-container h3 {
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+        
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .countdown-item {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 20px 15px;
+            min-width: 100px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .countdown-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-green);
+            line-height: 1;
+        }
+        
+        .countdown-label {
+            font-size: 0.9rem;
+            color: var(--dark-green);
+            font-weight: 500;
+        }
+        
+        .not-open-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .not-open-info {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .not-open-info h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .not-open-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .not-open-info li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .not-open-info li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--light-green);
+            font-weight: bold;
+        }
+        
+        .contact-preview {
+            padding: 80px 0;
+            background-color: var(--background);
+        }
+        
+        .contact-info {
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .contact-item {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .not-open-hero {
+                padding: 120px 0 60px;
+            }
+            
+            .not-open-icon {
+                font-size: 5rem;
+            }
+            
+            .not-open-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .not-open-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .countdown-item {
+                min-width: 80px;
+                padding: 15px 10px;
+            }
+            
+            .countdown-number {
+                font-size: 2rem;
+            }
+            
+            .not-open-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .not-open-actions .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .countdown-timer {
+                gap: 10px;
+            }
+            
+            .countdown-item {
+                min-width: 70px;
+                padding: 12px 8px;
+            }
+            
+            .countdown-number {
+                font-size: 1.7rem;
+            }
+            
+            .countdown-label {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    <script>
+        // Geri sayım işlevselliği
+        function updateCountdown() {
+            // Başvuruların açılacağı tarihi burada ayarlayın
+            const registrationDate = new Date('2025-11-01T00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = registrationDate - now;
+            
+            if (distance < 0) {
+                // Başvurular açıldığında yönlendirme yapabilirsiniz
+                document.querySelector('.countdown-container').innerHTML = '<h3>Başvurular Açıldı!</h3><a href="index.html#registration" class="btn btn-light">Hemen Başvur</a>';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        // Sayfa yüklendiğinde ve her saniye geri sayımı güncelle
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+            
+            // Mobil menü işlevselliği
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (hamburger) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+                
+                document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }));
+            }
+        });
+    </script>
+</body>
+</html>
